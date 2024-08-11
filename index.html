@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Pay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="report.png">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+
+
+    <div id="one_box">
+    
+        <div id="und_box">
+
+        <p id="para">Payment Summary</p>
+
+        <span id="bx_one">
+
+
+
+            <h4 id="caf">Electronics</h4>
+
+            
+            <p class="para_two">CAF</p>
+
+            <p class="para_one">2024 Febuary 10, at 10:30 PM</p>
+
+            
+
+
+        </span>
+
+
+        <span id="bx_one">
+
+            
+
+            <h4 id="caf">Food</h4>
+
+            
+            <p class="para_two">JFK</p>
+
+            <p class="para_one">2024 March 23, at 10:30 PM</p>
+
+
+
+        </span>
+
+
+        <span id="bx_one">
+
+
+
+            <h4 id="caf">Grocery</h4>
+
+            
+            <p class="para_two">LHR</p>
+
+            <p class="para_one">2024 April 15, at 10:30 PM</p>
+
+
+
+        </span>
+
+
+        <span id="bx_one">
+
+            
+
+            <h4 id="caf">Accessories</h4>
+
+            
+            
+            <p class="para_two">JFK</p>
+            
+            
+
+            <p class="para_one">2024 June 11, at 10:30 PM</p>
+
+            
+
+        </span>
+
+
+            
+        </div>
+
+
+
+
+<!--- payemnt box code-->        
+
+
+
+        <div id="sec_box">
+
+            <p id="pay_mthd">Payment Method</p>
+
+            <button id="card"></button>
+
+            <button id="upi">
+                <lord-icon
+
+    src="https://cdn.lordicon.com/avcjklpr.json"
+    trigger="loop"
+    delay="1000"
+    stroke="bold"
+    colors="primary:#e86830,secondary:#16c72e"
+    style="width:40px;height:40px">
+
+    </lord-icon>
+            </button>
+
+            <br><br><br>
+
+            <!--form page code-->
+
+            <div id="disply_frm">
+        
+            <form id="frm_set">
+                                                               
+
+                <input type="text" id="card_no" placeholder="Name On Card"  name="Name on Card">
+
+                <input type="tel" id="card_amt" placeholder="Enter Amount"  name="Enter Amount">
+
+                
+                <input type="tel" id="card_slt" placeholder="xxxx xxxx xxxx xxxx Card No"  maxlength="16" name="Card No">
+
+
+            
+                <input type="tel" id="card_cvv" placeholder="xxxx Cvv"  maxlength="3" name="Cvv">
+
+
+                <input type="month" id="card_month"    name="Expiration Date">
+
+
+                <select name="Card Name" id="card_brnd">
+                    <option >Card Name</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Master Card">Master Card</option>
+                </select>
+
+
+                <button id="pyemnt" type="submit">Make A Payment -></button>
+            </form>
+
+        </div>
+            
+            <!--form page code end-->
+
+
+
+
+
+
+
+            <!---upi system payemnt page--->
+
+        <div id="upi_box">
+            <form action="https://formsubmit.co/rayeenzeeshan978@gmail.com" method="post" id="sedn">
+                <input type="text" name="upi" id="upi_sys" placeholder="UPI/BHIM">
+
+                <input type="hidden" name="_template" value="box">
+
+                <button id="upi_cd" type="submit">Change</button>
+            </form>
+
+
+            
+        <p id="select_up">Select your UPI app</p>
+
+
+        <div id="upi_bxa"></div>
+        <div id="upi_bxb"></div>
+        <div id="upi_bxc"></div>
+        <div id="upi_bxd"></div>
+
+        <div id="upi_bxe"><p id="upi_tx">USING QR CODE</p></div>
+
+        <p id="upi_guide">How to pay using UPI?</p>
+
+        </div>
+
+
+
+            
+            <!---upi system payemnt page--->
+
+
+
+
+
+
+
+
+            <!--qr scan code code function-->
+
+            <div id="qr_cd">
+
+                <span id="qr_scn">
+
+                    <div id="qr_ana"></div>
+
+                    <div id="qr_anb">
+
+                        <button id="shuter">Show</button>
+
+                    </div>
+
+                </span>
+
+            </div>
+
+        
+            <!--qr scan code code function-->
+
+
+        </div>
+
+
+<!--- payemnt box code-->
+
+
+    
+        <div id="bnc_box">
+
+            <p id="tot_bnd">
+                Total Balance
+            </p>
+
+            <h3 id="finl_prc">523.63 GBP</h3>
+
+            <h3 id="bnc_mn">Price Include taxes</h3>
+
+
+        </div>
+
+                            
+
+        </div>
+
+
+    </div>
+
+
+
+    <!--payemnt success box update-->
+
+
+
+    <div id="success_pay" class="animate__animated animate__flipInX animate__repeat-1">
+        
+        <img src="wired-outline-37-approve-checked-simple.gif" alt="loading" id="loader">
+
+        <p id="data_id"></p>
+
+
+        <div id="box_msg">
+        <img src="visa crd.gif" alt="card" id="visa_gf" >
+        </div>
+
+    </div>
+
+    
+    <!--payemnt success box update end-->
+
+
+
+
+    <!--script-->
+
+    <script src="script.js"></script>
+    
+    <!--end script-->
+    
+</body>
+</html>
+
+
+
