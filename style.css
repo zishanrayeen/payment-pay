@@ -479,6 +479,45 @@ body{
     border-radius: 80px 80px 0px 0px;
 }
 
+
+/*start tabelt mode code function*/
+
+
+@media only screen and (min-width:768px) and (max-width:992px){
+
+    #success_pay{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+}
+
+
+/*end tabelt mode code function*/
+
+
+
+/*start mobile mode code function*/
+
+@media only screen and (max-width:600px){
+
+    #success_pay{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    #data_id{
+        font-size: 19px;
+    }
+
+}
+
+
+/*end mobile mode code function*/
+
+
 /*start succes page code end */
 
 
